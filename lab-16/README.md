@@ -210,7 +210,7 @@ affinity: {}
 Firstly, this is a simple command that takes the path to a chart and runs a battery of tests to ensure that the chart is well-formed:
 
 ```
-helm link ./hello-world
+helm lint ./hello-world
 ==> Linting ./hello-world/
 [INFO] Chart.yaml: icon is recommended
 
