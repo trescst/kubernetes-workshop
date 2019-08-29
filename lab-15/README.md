@@ -99,6 +99,14 @@ spec:
 
 ### Task 4: Apply this file to the cluster
 
+Before we can apply this pod we need to delete the previous one (you cannot update the resource fields of a pod):
+
+```
+kubectl delete -f lab-15-limited-pod.yml -n lab-15
+```
+
+Now create the resource quota:
+
 ```
 kubectl apply -f lab-15-resource-quota.yml -n lab-15
 ```
